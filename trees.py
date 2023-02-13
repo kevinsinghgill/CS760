@@ -83,11 +83,6 @@ def MakeSubtree(data):
         prediction = MakePrediction(data)
         return prediction
 
-    # stopping criteria: empty node
-    # if all(data['y']) or not any(data['y']):
-    #     prediction = MakePrediction(data)
-    #     return prediction
-
     total_splits = DetermineCandidateSplits(data)
     igr=[] 
 
@@ -131,13 +126,12 @@ def MakeSubtree(data):
 
 
 # question 2.2
-
-plt.plot(1,1, marker='o', color='red', label='0')
-plt.plot(1,2, marker='o',color='green',label='1')
-plt.plot(2,1, marker='o',color='green',label='1')
-plt.plot(2,2, marker='o',color='red', label='0')
-plt.legend()
-plt.savefig('zerogainratio.pdf')
+# plt.plot(1,1, marker='o', color='red', label='0')
+# plt.plot(1,2, marker='o',color='green',label='1')
+# plt.plot(2,1, marker='o',color='green',label='1')
+# plt.plot(2,2, marker='o',color='red', label='0')
+# plt.legend()
+# plt.savefig('zerogainratio.pdf')
 
 
 # question 2.3
